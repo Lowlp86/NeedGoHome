@@ -39,8 +39,8 @@ public class MessageActivity extends AppCompatActivity implements View.OnClickLi
                     Toast.makeText(MessageActivity.this, "内容不能为空！", Toast.LENGTH_SHORT).show();
                     break;
                 }
-                String title = messageTitle.getText().toString();
-                String text  = messageText.getText().toString();
+                final String title = messageTitle.getText().toString();
+                final String text  = messageText.getText().toString();
 
                 NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
@@ -57,3 +57,4 @@ public class MessageActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 }
+
